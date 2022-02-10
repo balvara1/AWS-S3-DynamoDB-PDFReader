@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>_301128209alvarado_Lab2</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\bookOff.png" />
+    <None Remove="Images\bookOn.png" />
+    <None Remove="Views\CCIMG.PNG" />
+    <None Remove="Views\DynamoIMG.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.76" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.3.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="19.3.0.43" />
+  </ItemGroup>
+
+    <ItemGroup>
+		<None Update="AppSettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\bookOff.png" />
+    <Resource Include="Images\bookOn.png" />
+    <Resource Include="Images\DynamoIMG.png" />
+    <Resource Include="Images\CCIMG.PNG" />
+  </ItemGroup>
+
+</Project>
